@@ -16,11 +16,6 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import { useNavigation } from "@react-navigation/native";
 import { Linking } from "react-native";
 import AppHeader from "../components/AppHeader";
-const bankImage = require("/Users/user/Downloads/6Front-main/6Front-main/assets/redBank.png");
-const localImage = require("/Users/user/Downloads/6Front-main/6Front-main/assets/1789298.png");
-const userImage = require("/Users/user/Downloads/6Front-main/6Front-main/assets/tech.png");
-const telImage = require("/Users/user/Downloads/6Front-main/6Front-main/assets/tell.png");
-const logoImage = require("/Users/user/Downloads/6Front-main/6Front-main/assets/tun.png");
 const ReclamationScreen = () => {
   const [reclamations, setReclamations] = useState([]);
   const [reclamationId, setreclamationid] = useState(null);

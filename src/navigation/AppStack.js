@@ -21,56 +21,6 @@ import HomeStack from "../navigation/TabNavigator";
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
 
-// Define your TabNavigator
-const MainTabNavigator = () => {
-  return (
-    <Tab.Navigator
-      screenOptions={{
-        headerShown: false,
-        tabBarShowLabel: false,
-        tabBarInactiveTintColor: "white",
-        tabBarActiveTintColor: "white",
-        tabBarStyle: {
-          backgroundColor: "#e95a69",
-        },
-      }}
-    >
-      <Tab.Screen
-        name="Home1"
-        component={HomeStack} // Change this to your desired Home screen
-        options={({ route }) => ({
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home-outline" color={color} size={size} />
-          ),
-        })}
-      />
-      <Tab.Screen
-        name="Notification"
-        component={NotificationScreen}
-        options={{
-          tabBarBadge: 3,
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons
-              name="chatbox-ellipses-outline"
-              color={color}
-              size={size}
-            />
-          ),
-        }}
-      />
-
-      <Tab.Screen
-        name="Profile"
-        component={ProfileScreen}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" color={color} size={size} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
-  );
-};
 
 // Define your DrawerNavigator
 const AppStack = () => {
@@ -90,7 +40,7 @@ const AppStack = () => {
     >
       <Drawer.Screen
         name="Home"
-        component={MainTabNavigator}
+        component={TabNavigator}
         options={{
           drawerIcon: ({ color }) => (
             <Ionicons name="home-outline" size={22} color={color} />

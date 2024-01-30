@@ -52,9 +52,11 @@ const TabNavigator = () => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarStyle: { backgroundColor: "0000" },
-        tabBarInactiveTintColor: "black",
-        tabBarActiveTintColor: "red",
+        tabBarInactiveTintColor: "white",
+        tabBarActiveTintColor: "white",
+        tabBarStyle: {
+          backgroundColor: "#e95a69",
+        },
       }}
     >
       <Tab.Screen
